@@ -1,0 +1,77 @@
+Start testing: Oct 15 00:42 HKT
+----------------------------------------------------------
+29/166 Testing: arp_network_interface
+29/166 Test: arp_network_interface
+Command: "/home/hwd/code/cpp/sponge/build/tests/net_interface"
+Directory: /home/hwd/code/cpp/cs144/sponge/build
+"arp_network_interface" start time: Oct 15 00:42 HKT
+Output:
+----------------------------------------------------------
+DEBUG: Network interface has Ethernet address 86:e9:2c:3a:5f:38 and IP address 4.3.2.1
+Test Failure on expectation:
+	Expectation: frame transmitted (dst=ff:ff:ff:ff:ff:ff, src=86:e9:2c:3a:5f:38, type=ARP + payload (28 bytes) ARP: opcode=REQUEST, sender=86:e9:2c:3a:5f:38/4.3.2.1, target=00:00:00:00:00:00/192.168.0.1)
+
+Failure message:
+	NetworkInterface was expected to send an Ethernet frame, but did not
+
+List of steps that executed successfully:
+	Initialized with (ethernet_address=86:e9:2c:3a:5f:38, ip_address=4.3.2.1)
+	     Action: request to send datagram (to next hop 192.168.0.1): IPv4, len=19, protocol=6, src=5.6.7.8, dst=13.12.11.10
+
+The test "typical ARP workflow" failed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"arp_network_interface" end time: Oct 15 00:42 HKT
+"arp_network_interface" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/166 Testing: router_test
+30/166 Test: router_test
+Command: "/home/hwd/code/cpp/sponge/build/apps/network_simulator"
+Directory: /home/hwd/code/cpp/cs144/sponge/build
+"router_test" start time: Oct 15 00:42 HKT
+Output:
+----------------------------------------------------------
+[32;1mConstructing network.[m
+DEBUG: Network interface has Ethernet address 02:00:00:fc:db:bf and IP address 171.67.76.46
+DEBUG: Network interface has Ethernet address 02:00:00:cf:54:ba and IP address 10.0.0.1
+DEBUG: Network interface has Ethernet address 02:00:00:41:2a:90 and IP address 172.16.0.1
+DEBUG: Network interface has Ethernet address 02:00:00:e4:86:8d and IP address 192.168.0.1
+DEBUG: Network interface has Ethernet address 02:00:00:8d:89:12 and IP address 198.178.229.1
+DEBUG: Network interface has Ethernet address 02:00:00:f2:d5:df and IP address 143.195.0.2
+DEBUG: Network interface has Ethernet address 02:00:00:c4:91:b3 and IP address 128.30.76.255
+DEBUG: Network interface has Ethernet address 26:ee:78:f6:90:57 and IP address 10.0.0.2
+DEBUG: Network interface has Ethernet address 9e:c4:94:d2:58:7f and IP address 171.67.76.1
+DEBUG: Network interface has Ethernet address ae:4a:9e:38:18:a4 and IP address 192.168.0.2
+DEBUG: Network interface has Ethernet address 82:01:c0:87:a6:e3 and IP address 143.195.0.1
+DEBUG: Network interface has Ethernet address 4a:b0:26:e1:d1:b3 and IP address 198.178.229.42
+DEBUG: Network interface has Ethernet address ca:7d:d7:0a:fd:ed and IP address 198.178.229.43
+DEBUG: adding route 0.0.0.0/0 => 171.67.76.1 on interface 0
+DEBUG: adding route 10.0.0.0/8 => (direct) on interface 1
+DEBUG: adding route 172.16.0.0/16 => (direct) on interface 2
+DEBUG: adding route 192.168.0.0/24 => (direct) on interface 3
+DEBUG: adding route 198.178.229.0/24 => (direct) on interface 4
+DEBUG: adding route 143.195.0.0/17 => 143.195.0.1 on interface 5
+DEBUG: adding route 143.195.128.0/18 => 143.195.0.1 on interface 5
+DEBUG: adding route 143.195.192.0/19 => 143.195.0.1 on interface 5
+DEBUG: adding route 128.30.76.255/16 => 128.30.0.1 on interface 6
+[32;1m
+
+Testing traffic between two ordinary hosts (applesauce to cherrypie)...[m
+
+Host applesauce trying to send datagram (with next hop = 10.0.0.1): IPv4, len=2f, protocol=6, src=10.0.0.2, dst=192.168.0.2 payload="random payload: {809613516}"
+
+
+
+[31;1mError: Host cherrypie did NOT receive an expected Internet datagram: IPv4, len=2f, protocol=6, src=10.0.0.2, dst=192.168.0.2 payload="random payload: {809613516}"[m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"router_test" end time: Oct 15 00:42 HKT
+"router_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 15 00:42 HKT
