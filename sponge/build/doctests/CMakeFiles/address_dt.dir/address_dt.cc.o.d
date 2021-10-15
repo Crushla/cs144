@@ -1,7 +1,7 @@
 doctests/CMakeFiles/address_dt.dir/address_dt.cc.o: \
- /home/hwd/code/cpp/sponge/doctests/address_dt.cc \
+ /home/hwd/code/cpp/cs144/sponge/doctests/address_dt.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/libsponge/util/address.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/address.hh \
  /usr/include/c++/11.1.0/cstddef \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -145,6 +145,6 @@ doctests/CMakeFiles/address_dt.dir/address_dt.cc.o: \
  /usr/include/c++/11.1.0/bits/basic_ios.tcc \
  /usr/include/c++/11.1.0/bits/ostream.tcc /usr/include/c++/11.1.0/istream \
  /usr/include/c++/11.1.0/bits/istream.tcc \
- /home/hwd/code/cpp/sponge/doctests/address_example_1.cc \
- /home/hwd/code/cpp/sponge/doctests/address_example_2.cc \
- /home/hwd/code/cpp/sponge/doctests/address_example_3.cc
+ /home/hwd/code/cpp/cs144/sponge/doctests/address_example_1.cc \
+ /home/hwd/code/cpp/cs144/sponge/doctests/address_example_2.cc \
+ /home/hwd/code/cpp/cs144/sponge/doctests/address_example_3.cc

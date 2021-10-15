@@ -1,9 +1,9 @@
 tests/CMakeFiles/wrapping_integers_unwrap.dir/wrapping_integers_unwrap.cc.o: \
- /home/hwd/code/cpp/sponge/tests/wrapping_integers_unwrap.cc \
+ /home/hwd/code/cpp/cs144/sponge/tests/wrapping_integers_unwrap.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/tests/test_should_be.hh \
- /home/hwd/code/cpp/sponge/tests/string_conversions.hh \
- /home/hwd/code/cpp/sponge/libsponge/wrapping_integers.hh \
+ /home/hwd/code/cpp/cs144/sponge/tests/test_should_be.hh \
+ /home/hwd/code/cpp/cs144/sponge/tests/string_conversions.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/wrapping_integers.hh \
  /usr/include/c++/11.1.0/cstdint \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \

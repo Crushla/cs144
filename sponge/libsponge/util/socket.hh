@@ -96,6 +96,7 @@ class TCPSocket : public Socket {
     TCPSocket() : Socket(AF_INET, SOCK_STREAM) {}
 
     //! Mark a socket as listening for incoming connections
+    //将套接字标记为侦听传入连接
     void listen(const int backlog = 16);
 
     //! Accept a new incoming connection

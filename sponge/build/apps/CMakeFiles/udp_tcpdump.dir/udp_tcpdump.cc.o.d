@@ -1,7 +1,8 @@
 apps/CMakeFiles/udp_tcpdump.dir/udp_tcpdump.cc.o: \
- /home/hwd/code/cpp/sponge/apps/udp_tcpdump.cc /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/libsponge/util/parser.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/buffer.hh \
+ /home/hwd/code/cpp/cs144/sponge/apps/udp_tcpdump.cc \
+ /usr/include/stdc-predef.h \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/parser.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/buffer.hh \
  /usr/include/c++/11.1.0/algorithm /usr/include/c++/11.1.0/utility \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -155,8 +156,8 @@ apps/CMakeFiles/udp_tcpdump.dir/udp_tcpdump.cc.o: \
  /usr/include/c++/11.1.0/bits/basic_string.tcc /usr/include/sys/uio.h \
  /usr/include/bits/types/struct_iovec.h /usr/include/bits/uio_lim.h \
  /usr/include/bits/uio-ext.h /usr/include/c++/11.1.0/stdexcept \
- /home/hwd/code/cpp/sponge/libsponge/tcp_helpers/tcp_header.hh \
- /home/hwd/code/cpp/sponge/libsponge/wrapping_integers.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/tcp_helpers/tcp_header.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/wrapping_integers.hh \
  /usr/include/c++/11.1.0/ostream /usr/include/c++/11.1.0/ios \
  /usr/include/c++/11.1.0/bits/ios_base.h \
  /usr/include/c++/11.1.0/bits/locale_classes.h \
@@ -175,10 +176,10 @@ apps/CMakeFiles/udp_tcpdump.dir/udp_tcpdump.cc.o: \
  /usr/include/c++/11.1.0/bits/locale_facets.tcc \
  /usr/include/c++/11.1.0/bits/basic_ios.tcc \
  /usr/include/c++/11.1.0/bits/ostream.tcc \
- /home/hwd/code/cpp/sponge/libsponge/tcp_helpers/tcp_segment.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/buffer.hh \
- /home/hwd/code/cpp/sponge/libsponge/tcp_helpers/tcp_header.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/util.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/tcp_helpers/tcp_segment.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/buffer.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/tcp_helpers/tcp_header.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/util.hh \
  /usr/include/c++/11.1.0/cstddef /usr/include/c++/11.1.0/iterator \
  /usr/include/c++/11.1.0/bits/stream_iterator.h \
  /usr/include/c++/11.1.0/random /usr/include/c++/11.1.0/cmath \

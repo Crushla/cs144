@@ -1,8 +1,8 @@
 doctests/CMakeFiles/parser_dt.dir/parser_dt.cc.o: \
- /home/hwd/code/cpp/sponge/doctests/parser_dt.cc \
+ /home/hwd/code/cpp/cs144/sponge/doctests/parser_dt.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/libsponge/util/parser.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/buffer.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/parser.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/buffer.hh \
  /usr/include/c++/11.1.0/algorithm /usr/include/c++/11.1.0/utility \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -156,4 +156,4 @@ doctests/CMakeFiles/parser_dt.dir/parser_dt.cc.o: \
  /usr/include/c++/11.1.0/bits/basic_string.tcc /usr/include/sys/uio.h \
  /usr/include/bits/types/struct_iovec.h /usr/include/bits/uio_lim.h \
  /usr/include/bits/uio-ext.h /usr/include/c++/11.1.0/stdexcept \
- /home/hwd/code/cpp/sponge/doctests/parser_example.cc
+ /home/hwd/code/cpp/cs144/sponge/doctests/parser_example.cc

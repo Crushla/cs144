@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hwd/code/cpp/sponge
+CMAKE_SOURCE_DIR = /home/hwd/code/cpp/cs144/sponge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hwd/code/cpp/sponge/build
+CMAKE_BINARY_DIR = /home/hwd/code/cpp/cs144/sponge/build
 
 # Utility rule file for format.
 
@@ -82,6 +82,6 @@ CMakeFiles/format.dir/clean:
 .PHONY : CMakeFiles/format.dir/clean
 
 CMakeFiles/format.dir/depend:
-	cd /home/hwd/code/cpp/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwd/code/cpp/sponge /home/hwd/code/cpp/sponge /home/hwd/code/cpp/sponge/build /home/hwd/code/cpp/sponge/build /home/hwd/code/cpp/sponge/build/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hwd/code/cpp/cs144/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwd/code/cpp/cs144/sponge /home/hwd/code/cpp/cs144/sponge /home/hwd/code/cpp/cs144/sponge/build /home/hwd/code/cpp/cs144/sponge/build /home/hwd/code/cpp/cs144/sponge/build/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/format.dir/depend
 

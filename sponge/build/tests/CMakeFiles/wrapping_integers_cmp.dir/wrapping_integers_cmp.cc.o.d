@@ -1,9 +1,9 @@
 tests/CMakeFiles/wrapping_integers_cmp.dir/wrapping_integers_cmp.cc.o: \
- /home/hwd/code/cpp/sponge/tests/wrapping_integers_cmp.cc \
+ /home/hwd/code/cpp/cs144/sponge/tests/wrapping_integers_cmp.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/tests/test_should_be.hh \
- /home/hwd/code/cpp/sponge/tests/string_conversions.hh \
- /home/hwd/code/cpp/sponge/libsponge/wrapping_integers.hh \
+ /home/hwd/code/cpp/cs144/sponge/tests/test_should_be.hh \
+ /home/hwd/code/cpp/cs144/sponge/tests/string_conversions.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/wrapping_integers.hh \
  /usr/include/c++/11.1.0/cstdint \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -137,7 +137,7 @@ tests/CMakeFiles/wrapping_integers_cmp.dir/wrapping_integers_cmp.cc.o: \
  /usr/include/c++/11.1.0/sstream /usr/include/c++/11.1.0/istream \
  /usr/include/c++/11.1.0/bits/istream.tcc \
  /usr/include/c++/11.1.0/bits/sstream.tcc \
- /home/hwd/code/cpp/sponge/libsponge/util/util.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/util.hh \
  /usr/include/c++/11.1.0/algorithm \
  /usr/include/c++/11.1.0/bits/stl_algo.h \
  /usr/include/c++/11.1.0/bits/algorithmfwd.h \

@@ -1,7 +1,7 @@
 libsponge/CMakeFiles/sponge.dir/byte_stream.cc.o: \
- /home/hwd/code/cpp/sponge/libsponge/byte_stream.cc \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/byte_stream.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/libsponge/byte_stream.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/byte_stream.hh \
  /usr/include/c++/11.1.0/cstddef \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \

@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hwd/code/cpp/sponge/doctests/socket_dt.cc" "doctests/CMakeFiles/socket_dt.dir/socket_dt.cc.o" "gcc" "doctests/CMakeFiles/socket_dt.dir/socket_dt.cc.o.d"
+  "/home/hwd/code/cpp/cs144/sponge/doctests/socket_dt.cc" "doctests/CMakeFiles/socket_dt.dir/socket_dt.cc.o" "gcc" "doctests/CMakeFiles/socket_dt.dir/socket_dt.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/hwd/code/cpp/sponge/build/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
+  "/home/hwd/code/cpp/cs144/sponge/build/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

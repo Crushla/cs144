@@ -1,9 +1,9 @@
 apps/CMakeFiles/stream_copy.dir/bidirectional_stream_copy.cc.o: \
- /home/hwd/code/cpp/sponge/apps/bidirectional_stream_copy.cc \
+ /home/hwd/code/cpp/cs144/sponge/apps/bidirectional_stream_copy.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/apps/bidirectional_stream_copy.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/socket.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/address.hh \
+ /home/hwd/code/cpp/cs144/sponge/apps/bidirectional_stream_copy.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/socket.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/address.hh \
  /usr/include/c++/11.1.0/cstddef \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -123,8 +123,8 @@ apps/CMakeFiles/stream_copy.dir/bidirectional_stream_copy.cc.o: \
  /usr/include/c++/11.1.0/bits/basic_string.tcc \
  /usr/include/c++/11.1.0/utility \
  /usr/include/c++/11.1.0/bits/stl_relops.h \
- /home/hwd/code/cpp/sponge/libsponge/util/file_descriptor.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/buffer.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/file_descriptor.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/buffer.hh \
  /usr/include/c++/11.1.0/algorithm \
  /usr/include/c++/11.1.0/bits/stl_algo.h \
  /usr/include/c++/11.1.0/bits/algorithmfwd.h \
@@ -173,10 +173,10 @@ apps/CMakeFiles/stream_copy.dir/bidirectional_stream_copy.cc.o: \
  /usr/include/c++/11.1.0/pstl/glue_numeric_defs.h /usr/include/sys/uio.h \
  /usr/include/bits/uio_lim.h /usr/include/bits/uio-ext.h \
  /usr/include/c++/11.1.0/stdexcept /usr/include/c++/11.1.0/limits \
- /home/hwd/code/cpp/sponge/libsponge/byte_stream.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/byte_stream.hh \
  /usr/include/c++/11.1.0/list /usr/include/c++/11.1.0/bits/stl_list.h \
  /usr/include/c++/11.1.0/bits/list.tcc \
- /home/hwd/code/cpp/sponge/libsponge/util/eventloop.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/eventloop.hh \
  /usr/include/poll.h /usr/include/sys/poll.h /usr/include/bits/poll.h \
  /usr/include/c++/11.1.0/iostream /usr/include/c++/11.1.0/ostream \
  /usr/include/c++/11.1.0/ios /usr/include/c++/11.1.0/bits/ios_base.h \

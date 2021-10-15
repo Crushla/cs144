@@ -1,9 +1,9 @@
 libsponge/CMakeFiles/sponge.dir/util/eventloop.cc.o: \
- /home/hwd/code/cpp/sponge/libsponge/util/eventloop.cc \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/eventloop.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/libsponge/util/eventloop.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/file_descriptor.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/buffer.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/eventloop.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/file_descriptor.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/buffer.hh \
  /usr/include/c++/11.1.0/algorithm /usr/include/c++/11.1.0/utility \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -161,7 +161,7 @@ libsponge/CMakeFiles/sponge.dir/util/eventloop.cc.o: \
  /usr/include/c++/11.1.0/list /usr/include/c++/11.1.0/bits/stl_list.h \
  /usr/include/c++/11.1.0/bits/list.tcc /usr/include/poll.h \
  /usr/include/sys/poll.h /usr/include/bits/poll.h \
- /home/hwd/code/cpp/sponge/libsponge/util/util.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/util.hh \
  /usr/include/c++/11.1.0/iterator \
  /usr/include/c++/11.1.0/bits/stream_iterator.h \
  /usr/include/c++/11.1.0/bits/streambuf_iterator.h \

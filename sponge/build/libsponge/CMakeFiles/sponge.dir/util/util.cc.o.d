@@ -1,7 +1,7 @@
 libsponge/CMakeFiles/sponge.dir/util/util.cc.o: \
- /home/hwd/code/cpp/sponge/libsponge/util/util.cc \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/util.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/libsponge/util/util.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/util.hh \
  /usr/include/c++/11.1.0/algorithm /usr/include/c++/11.1.0/utility \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \

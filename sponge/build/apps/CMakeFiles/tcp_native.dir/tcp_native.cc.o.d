@@ -1,8 +1,9 @@
 apps/CMakeFiles/tcp_native.dir/tcp_native.cc.o: \
- /home/hwd/code/cpp/sponge/apps/tcp_native.cc /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/apps/bidirectional_stream_copy.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/socket.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/address.hh \
+ /home/hwd/code/cpp/cs144/sponge/apps/tcp_native.cc \
+ /usr/include/stdc-predef.h \
+ /home/hwd/code/cpp/cs144/sponge/apps/bidirectional_stream_copy.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/socket.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/address.hh \
  /usr/include/c++/11.1.0/cstddef \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -122,8 +123,8 @@ apps/CMakeFiles/tcp_native.dir/tcp_native.cc.o: \
  /usr/include/c++/11.1.0/bits/basic_string.tcc \
  /usr/include/c++/11.1.0/utility \
  /usr/include/c++/11.1.0/bits/stl_relops.h \
- /home/hwd/code/cpp/sponge/libsponge/util/file_descriptor.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/buffer.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/file_descriptor.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/buffer.hh \
  /usr/include/c++/11.1.0/algorithm \
  /usr/include/c++/11.1.0/bits/stl_algo.h \
  /usr/include/c++/11.1.0/bits/algorithmfwd.h \

@@ -1,7 +1,7 @@
 tests/CMakeFiles/fsm_stream_reassembler_holes.dir/fsm_stream_reassembler_holes.cc.o: \
- /home/hwd/code/cpp/sponge/tests/fsm_stream_reassembler_holes.cc \
+ /home/hwd/code/cpp/cs144/sponge/tests/fsm_stream_reassembler_holes.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/libsponge/byte_stream.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/byte_stream.hh \
  /usr/include/c++/11.1.0/cstddef \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -117,10 +117,10 @@ tests/CMakeFiles/fsm_stream_reassembler_holes.dir/fsm_stream_reassembler_holes.c
  /usr/include/c++/11.1.0/bits/basic_string.tcc \
  /usr/include/c++/11.1.0/utility \
  /usr/include/c++/11.1.0/bits/stl_relops.h \
- /home/hwd/code/cpp/sponge/tests/fsm_stream_reassembler_harness.hh \
- /home/hwd/code/cpp/sponge/libsponge/stream_reassembler.hh \
- /home/hwd/code/cpp/sponge/libsponge/byte_stream.hh \
- /home/hwd/code/cpp/sponge/libsponge/util/util.hh \
+ /home/hwd/code/cpp/cs144/sponge/tests/fsm_stream_reassembler_harness.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/stream_reassembler.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/byte_stream.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/util/util.hh \
  /usr/include/c++/11.1.0/algorithm \
  /usr/include/c++/11.1.0/bits/stl_algo.h \
  /usr/include/c++/11.1.0/bits/algorithmfwd.h \

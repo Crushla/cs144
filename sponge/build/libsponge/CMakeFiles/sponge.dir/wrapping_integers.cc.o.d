@@ -1,7 +1,7 @@
 libsponge/CMakeFiles/sponge.dir/wrapping_integers.cc.o: \
- /home/hwd/code/cpp/sponge/libsponge/wrapping_integers.cc \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/wrapping_integers.cc \
  /usr/include/stdc-predef.h \
- /home/hwd/code/cpp/sponge/libsponge/wrapping_integers.hh \
+ /home/hwd/code/cpp/cs144/sponge/libsponge/wrapping_integers.hh \
  /usr/include/c++/11.1.0/cstdint \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \

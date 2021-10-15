@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hwd/code/cpp/sponge
+CMAKE_SOURCE_DIR = /home/hwd/code/cpp/cs144/sponge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hwd/code/cpp/sponge/build
+CMAKE_BINARY_DIR = /home/hwd/code/cpp/cs144/sponge/build
 
 # Utility rule file for check_lab4.
 
@@ -67,7 +67,7 @@ include CMakeFiles/check_lab4.dir/compiler_depend.make
 include CMakeFiles/check_lab4.dir/progress.make
 
 CMakeFiles/check_lab4:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hwd/code/cpp/sponge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing the TCP connection..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hwd/code/cpp/cs144/sponge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing the TCP connection..."
 	../tun.sh check 144 145
 	/usr/bin/ctest --output-on-failure --timeout 10 -R ^t_
 
@@ -84,6 +84,6 @@ CMakeFiles/check_lab4.dir/clean:
 .PHONY : CMakeFiles/check_lab4.dir/clean
 
 CMakeFiles/check_lab4.dir/depend:
-	cd /home/hwd/code/cpp/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwd/code/cpp/sponge /home/hwd/code/cpp/sponge /home/hwd/code/cpp/sponge/build /home/hwd/code/cpp/sponge/build /home/hwd/code/cpp/sponge/build/CMakeFiles/check_lab4.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hwd/code/cpp/cs144/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwd/code/cpp/cs144/sponge /home/hwd/code/cpp/cs144/sponge /home/hwd/code/cpp/cs144/sponge/build /home/hwd/code/cpp/cs144/sponge/build /home/hwd/code/cpp/cs144/sponge/build/CMakeFiles/check_lab4.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check_lab4.dir/depend
 
