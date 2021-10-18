@@ -5,13 +5,16 @@
 
 #include <cstdint>
 #include <string>
-
+#include <map>
 //! \brief A class that assembles a series of excerpts from a byte stream (possibly out of order,
 //! possibly overlapping) into an in-order byte stream.
 class StreamReassembler {
   private:
     // Your code here -- add private members as necessary.
-
+    std::map<size_t,char>_map;
+    size_t  _unassembled_bytes;
+    size_t  _unread_index;
+    bool _eof;
     ByteStream _output;  //!< The reassembled in-order byte stream
     size_t _capacity;    //!< The maximum number of bytes
 
@@ -19,7 +22,14 @@ class StreamReassembler {
     //! \brief Construct a `StreamReassembler` that will store up to `capacity` bytes.
     //! \note This capacity limits both the bytes that have been reassembled,
     //! and those that have not yet been reassembled.
-    StreamReassembler(const size_t capacity);
+    StreamReassembler(const size_t capacity):
+        _map{},
+        _unassembled_bytes(0),
+        _unread_index(0),
+        _eof(false),
+        _output(capacity),
+        _capacity(capacity)
+        {};
 
     //! \brief Receives a substring and writes any newly contiguous bytes into the stream.
     //!
@@ -35,6 +45,7 @@ class StreamReassembler {
 
     //! \name Access the reassembled byte stream
     //!@{
+    //访问重组的字节流
     const ByteStream &stream_out() const { return _output; }
     ByteStream &stream_out() { return _output; }
     //!@}
@@ -43,10 +54,15 @@ class StreamReassembler {
     //!
     //! \note If the byte at a particular index has been submitted twice, it
     //! should only be counted once for the purpose of this function.
+    //！ 已存储但尚未重组的子字符串中的字节数
+    //！ 如果一个特定索引处的字节已经被提交了两次，它就会返回
+    //！ 为实现此功能，只应计算一次。
     size_t unassembled_bytes() const;
 
     //! \brief Is the internal state empty (other than the output stream)?
     //! \returns `true` if no substrings are waiting to be assembled
+    //！ 内部状态是否为空(除了输出流)?
+    //！ \返回' true '如果没有子字符串等待组装
     bool empty() const;
 };
 

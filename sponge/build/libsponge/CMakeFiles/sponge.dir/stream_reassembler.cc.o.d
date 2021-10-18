@@ -117,4 +117,12 @@ libsponge/CMakeFiles/sponge.dir/stream_reassembler.cc.o: \
  /usr/include/c++/11.1.0/bits/charconv.h \
  /usr/include/c++/11.1.0/bits/basic_string.tcc \
  /usr/include/c++/11.1.0/utility \
- /usr/include/c++/11.1.0/bits/stl_relops.h
+ /usr/include/c++/11.1.0/bits/stl_relops.h /usr/include/c++/11.1.0/map \
+ /usr/include/c++/11.1.0/bits/stl_tree.h \
+ /usr/include/c++/11.1.0/bits/node_handle.h \
+ /usr/include/c++/11.1.0/bits/stl_map.h /usr/include/c++/11.1.0/tuple \
+ /usr/include/c++/11.1.0/array \
+ /usr/include/c++/11.1.0/bits/uses_allocator.h \
+ /usr/include/c++/11.1.0/bits/invoke.h \
+ /usr/include/c++/11.1.0/bits/stl_multimap.h \
+ /usr/include/c++/11.1.0/bits/erase_if.h
