@@ -64,6 +64,10 @@ class StreamReassembler {
     //！ 内部状态是否为空(除了输出流)?
     //！ \返回' true '如果没有子字符串等待组装
     bool empty() const;
+
+    size_t unread_bytes()const{
+        return _unread_index;
+    }
 };
 
 #endif  // SPONGE_LIBSPONGE_STREAM_REASSEMBLER_HH

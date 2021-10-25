@@ -1,7 +1,2 @@
-15:t_strm_reassem_cap
-17:t_strm_reassem_seq
-18:t_strm_reassem_dup
-19:t_strm_reassem_holes
-20:t_strm_reassem_many
-21:t_strm_reassem_overlapping
-22:t_strm_reassem_win
+5:t_recv_transmit
+6:t_recv_window
