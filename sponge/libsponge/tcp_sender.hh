@@ -24,7 +24,7 @@ class TCPSender {
     //TCPSender希望发送的段的出站队列
     //! outbound queue of segments that the TCPSender wants sent
     std::queue<TCPSegment> _segments_out{};
-    //连接的重传计时器
+    //重传计时器
     //! retransmission timer for the connection
     unsigned int _initial_retransmission_timeout;
     //尚未发送的输出字节流
@@ -34,6 +34,22 @@ class TCPSender {
     //! the (absolute) sequence number for the next byte to be sent
     uint64_t _next_seqno{0};
 
+    bool _syn = false;
+    bool _fin = false;
+    uint16_t _win_size = 0;
+    uint64_t _recv_ackno = 0;
+    //计时开始
+    bool _time_running = false;
+    //开始发送到现在的时间
+    size_t _time{0};
+    //重传次数
+    unsigned int _resend_times{0};
+    //当前的RTO值
+    unsigned int _current_retransmission_timeout = 0;
+    //已经发送的部分,会被存入该队列
+    std::queue<TCPSegment> _segments_has_out{};
+    //尚未确认的序列号数
+    uint64_t _bytes_in_flight = 0;
   public:
     //! Initialize a TCPSender
     TCPSender(const size_t capacity = TCPConfig::DEFAULT_CAPACITY,
@@ -50,6 +66,7 @@ class TCPSender {
     //!@{
 
     //! \brief A new acknowledgment was received
+    // 收到了新的确认
     bool ack_received(const WrappingInt32 ackno, const uint16_t window_size);
     //生成一个空的有效负载段(用于创建空的ACK段)
     //! \brief Generate an empty-payload segment (useful for creating empty ACK segments)
@@ -57,6 +74,8 @@ class TCPSender {
     //创建和发送段，以填满尽可能多的窗口
     //! \brief create and send segments to fill as much of the window as possible
     void fill_window();
+
+    void send_segment(TCPSegment &seg);
     //通知TCPSender时间的流逝
     //! \brief Notifies the TCPSender of the passage of time
     void tick(const size_t ms_since_last_tick);
@@ -87,11 +106,11 @@ class TCPSender {
     //!@{
 
     //! \brief absolute seqno for the next byte to be sent
-    //下一个序列号是什么
+    //下一个绝对序列号
     uint64_t next_seqno_absolute() const { return _next_seqno; }
 
     //! \brief relative seqno for the next byte to be sent
-    //要发送的下一个字节的相对秒数
+    //要发送的下一个字节的seqno
     WrappingInt32 next_seqno() const { return wrap(_next_seqno, _isn); }
     //!@}
 };
