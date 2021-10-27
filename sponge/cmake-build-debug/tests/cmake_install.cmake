@@ -1,4 +1,4 @@
-# Install script for directory: /home/hwd/code/cpp/sponge/tests
+# Install script for directory: /home/hwd/code/cpp/cs144/sponge/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

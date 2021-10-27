@@ -53,10 +53,10 @@ RM = /home/hwd/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hwd/code/cpp/sponge
+CMAKE_SOURCE_DIR = /home/hwd/code/cpp/cs144/sponge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hwd/code/cpp/sponge/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hwd/code/cpp/cs144/sponge/cmake-build-debug
 
 # Utility rule file for check_lab1.
 
@@ -67,7 +67,7 @@ include CMakeFiles/check_lab1.dir/compiler_depend.make
 include CMakeFiles/check_lab1.dir/progress.make
 
 CMakeFiles/check_lab1:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hwd/code/cpp/sponge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing the stream reassembler..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hwd/code/cpp/cs144/sponge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing the stream reassembler..."
 	/home/hwd/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/ctest --output-on-failure --timeout 10 -R 't_strm_reassem_|t_webget|t_byte_stream|_dt'
 
 check_lab1: CMakeFiles/check_lab1
@@ -83,6 +83,6 @@ CMakeFiles/check_lab1.dir/clean:
 .PHONY : CMakeFiles/check_lab1.dir/clean
 
 CMakeFiles/check_lab1.dir/depend:
-	cd /home/hwd/code/cpp/sponge/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwd/code/cpp/sponge /home/hwd/code/cpp/sponge /home/hwd/code/cpp/sponge/cmake-build-debug /home/hwd/code/cpp/sponge/cmake-build-debug /home/hwd/code/cpp/sponge/cmake-build-debug/CMakeFiles/check_lab1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hwd/code/cpp/cs144/sponge/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwd/code/cpp/cs144/sponge /home/hwd/code/cpp/cs144/sponge /home/hwd/code/cpp/cs144/sponge/cmake-build-debug /home/hwd/code/cpp/cs144/sponge/cmake-build-debug /home/hwd/code/cpp/cs144/sponge/cmake-build-debug/CMakeFiles/check_lab1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check_lab1.dir/depend
 

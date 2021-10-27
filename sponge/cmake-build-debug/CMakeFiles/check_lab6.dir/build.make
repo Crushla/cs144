@@ -53,10 +53,10 @@ RM = /home/hwd/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hwd/code/cpp/sponge
+CMAKE_SOURCE_DIR = /home/hwd/code/cpp/cs144/sponge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hwd/code/cpp/sponge/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hwd/code/cpp/cs144/sponge/cmake-build-debug
 
 # Utility rule file for check_lab6.
 
@@ -67,7 +67,7 @@ include CMakeFiles/check_lab6.dir/compiler_depend.make
 include CMakeFiles/check_lab6.dir/progress.make
 
 CMakeFiles/check_lab6:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hwd/code/cpp/sponge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing Lab 6..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hwd/code/cpp/cs144/sponge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing Lab 6..."
 	/home/hwd/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/bin/cmake/linux/bin/ctest --output-on-failure --timeout 10 -R '^arp_|^router_'
 
 check_lab6: CMakeFiles/check_lab6
@@ -83,6 +83,6 @@ CMakeFiles/check_lab6.dir/clean:
 .PHONY : CMakeFiles/check_lab6.dir/clean
 
 CMakeFiles/check_lab6.dir/depend:
-	cd /home/hwd/code/cpp/sponge/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwd/code/cpp/sponge /home/hwd/code/cpp/sponge /home/hwd/code/cpp/sponge/cmake-build-debug /home/hwd/code/cpp/sponge/cmake-build-debug /home/hwd/code/cpp/sponge/cmake-build-debug/CMakeFiles/check_lab6.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hwd/code/cpp/cs144/sponge/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwd/code/cpp/cs144/sponge /home/hwd/code/cpp/cs144/sponge /home/hwd/code/cpp/cs144/sponge/cmake-build-debug /home/hwd/code/cpp/cs144/sponge/cmake-build-debug /home/hwd/code/cpp/cs144/sponge/cmake-build-debug/CMakeFiles/check_lab6.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check_lab6.dir/depend
 

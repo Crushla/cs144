@@ -17,18 +17,20 @@
 //! segments if the retransmission timer expires.
 class TCPSender {
   private:
+    //我们的初始序列号，也就是SYN的序列号。
     //! our initial sequence number, the number for our SYN.
     WrappingInt32 _isn;
 
+    //TCPSender希望发送的段的出站队列
     //! outbound queue of segments that the TCPSender wants sent
     std::queue<TCPSegment> _segments_out{};
-
+    //连接的重传计时器
     //! retransmission timer for the connection
     unsigned int _initial_retransmission_timeout;
-
+    //尚未发送的输出字节流
     //! outgoing stream of bytes that have not yet been sent
     ByteStream _stream;
-
+    //要发送的下一个字节的(绝对)序列号
     //! the (absolute) sequence number for the next byte to be sent
     uint64_t _next_seqno{0};
 
@@ -49,13 +51,13 @@ class TCPSender {
 
     //! \brief A new acknowledgment was received
     bool ack_received(const WrappingInt32 ackno, const uint16_t window_size);
-
+    //生成一个空的有效负载段(用于创建空的ACK段)
     //! \brief Generate an empty-payload segment (useful for creating empty ACK segments)
     void send_empty_segment();
-
+    //创建和发送段，以填满尽可能多的窗口
     //! \brief create and send segments to fill as much of the window as possible
     void fill_window();
-
+    //通知TCPSender时间的流逝
     //! \brief Notifies the TCPSender of the passage of time
     void tick(const size_t ms_since_last_tick);
     //!@}
@@ -66,15 +68,18 @@ class TCPSender {
     //! \brief How many sequence numbers are occupied by segments sent but not yet acknowledged?
     //! \note count is in "sequence space," i.e. SYN and FIN each count for one byte
     //! (see TCPSegment::length_in_sequence_space())
+    //发送的但尚未确认的段占用了多少序列号
     size_t bytes_in_flight() const;
 
     //! \brief Number of consecutive retransmissions that have occurred in a row
+    //在一行中连续发生的重传次数
     unsigned int consecutive_retransmissions() const;
 
     //! \brief TCPSegments that the TCPSender has enqueued for transmission.
     //! \note These must be dequeued and sent by the TCPConnection,
     //! which will need to fill in the fields that are set by the TCPReceiver
     //! (ackno and window size) before sending.
+    //TCPSender已排队等待传输的TCPSegments。
     std::queue<TCPSegment> &segments_out() { return _segments_out; }
     //!@}
 
@@ -82,9 +87,11 @@ class TCPSender {
     //!@{
 
     //! \brief absolute seqno for the next byte to be sent
+    //下一个序列号是什么
     uint64_t next_seqno_absolute() const { return _next_seqno; }
 
     //! \brief relative seqno for the next byte to be sent
+    //要发送的下一个字节的相对秒数
     WrappingInt32 next_seqno() const { return wrap(_next_seqno, _isn); }
     //!@}
 };
