@@ -134,7 +134,7 @@ struct WriteBytes : public SenderAction {
 
     void execute(TCPSender &sender, std::deque<TCPSegment> &) const {
         sender.stream_in().write(std::move(_bytes));
-        sender.fill_window();
+        sender.fill_window(false);
     }
 };
 
@@ -196,7 +196,7 @@ struct AckReceived : public SenderAction {
         if (not sender.ack_received(_ackno, _window_advertisement.value_or(DEFAULT_TEST_WINDOW))) {
             sender.send_empty_segment();
         }
-        sender.fill_window();
+        sender.fill_window(false);
     }
 };
 
@@ -206,7 +206,7 @@ struct Close : public SenderAction {
 
     void execute(TCPSender &sender, std::deque<TCPSegment> &) const {
         sender.stream_in().end_input();
-        sender.fill_window();
+        sender.fill_window(false);
     }
 };
 
@@ -388,7 +388,7 @@ class TCPSenderTestHarness {
         , sender(config.send_capacity, config.rt_timeout, config.fixed_isn)
         , steps_executed()
         , name(name_) {
-        sender.fill_window();
+        sender.fill_window(false);
         collect_output();
         std::ostringstream ss;
         ss << "Initialized with ("

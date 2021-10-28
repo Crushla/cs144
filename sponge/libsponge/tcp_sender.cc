@@ -22,14 +22,16 @@ TCPSender::TCPSender(const size_t capacity, const uint16_t retx_timeout, const s
 
 uint64_t TCPSender::bytes_in_flight() const { return _bytes_in_flight; }
 //填充窗口
-void TCPSender::fill_window() {
+void TCPSender::fill_window(bool send_syn) {
     //第一次握手
     if (!_syn){
-        TCPSegment seg;
-        _syn = true;
-        seg.header().syn = true;
-        send_segment(seg);
-        return;
+        if (send_syn) {
+            TCPSegment seg;
+            _syn = true;
+            seg.header().syn = true;
+            send_segment(seg);
+            return;
+        }
     }
     size_t win_size = _win_size > 0 ? _win_size : 1;
     size_t remain;
@@ -93,7 +95,7 @@ bool TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_si
         }
     }
     //填充窗口
-    fill_window();
+    fill_window(false);
     _current_retransmission_timeout = _initial_retransmission_timeout;
     _resend_times = 0;
     if (!_segments_has_out.empty()){

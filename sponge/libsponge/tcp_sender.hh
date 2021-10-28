@@ -73,7 +73,7 @@ class TCPSender {
     void send_empty_segment();
     //创建和发送段，以填满尽可能多的窗口
     //! \brief create and send segments to fill as much of the window as possible
-    void fill_window();
+    void fill_window(bool b);
 
     void send_segment(TCPSegment &seg);
     //通知TCPSender时间的流逝
